@@ -11,9 +11,10 @@ def deputes_mails(deputes)
    page = Nokogiri::HTML(open(deputes))
    hash = {
       "first_name" => page.css("h1").text.split(" ")[0],
-      "last_name" => page.css("h1").text.split(" ")[1..-1],
+      "last_name" => page.css("h1").text.split(" ")[1..-1].join(" "),
       "email" => page.xpath('//a[contains(text(),"@assemblee-nationale.fr")]').text,
    }
+   puts hash
    return hash
 end
 

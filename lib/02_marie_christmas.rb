@@ -5,6 +5,7 @@ require 'pry'
 def get_townhall_email(townhall_url)
    page = Nokogiri::HTML(open(townhall_url))
    hash = {"#{page.xpath("/html[1]/body[1]/div[1]/main[1]/section[1]/div[1]/div[1]/div[1]/h1[1]").text}" => page.xpath("/html[1]/body[1]/div[1]/main[1]/section[2]/div[1]/table[1]/tbody[1]/tr[4]/td[2]").text}
+   puts hash
    return hash
 end
 

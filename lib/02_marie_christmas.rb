@@ -26,3 +26,5 @@ def perform(dept)
    get_townhall_urls(dept).map{|i| arr << get_townhall_email(i)}
    return arr
 end
+
+perform('https://www.annuaire-des-mairies.com/val-d-oise.html')

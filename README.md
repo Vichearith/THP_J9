@@ -1,4 +1,4 @@
-# The Hacking Project - Jour 9 - Scrapper fou
+# The Hacking Project - Semaine 2 - Jeudi
 
 ## Dark Trader
 
